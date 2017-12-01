@@ -23,7 +23,7 @@
 }
 
 body {
-  background: url(../img/bg.jpg) no-repeat center center fixed;
+  background: blue url(../img/bg.jpg) no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -32,6 +32,18 @@ body {
   text-shadow: 2px 0 0 black, -2px 0 0 black, 0 2px 0 black, 0 -2px 0 black, 1px 1px black, -1px -1px 0 black, 1px -1px 0 black, -1px 1px 0 black;
   font-weight: bold;
   font-size: 14pt;
+}
+
+ol {
+  list-style-type: none;
+}
+
+ol li {
+  counter-increment: step-counter;
+}
+
+ol li::before {
+  content: counter(step-counter);
 }
 
 form {
