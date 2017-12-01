@@ -58,8 +58,6 @@ $(document).ready(function(){
       }
     };
 
-    console.log(design);
-
     if (!name || !design || !microsoft || !java || !react || !ruby) {
       alert("Please fill out all fields")
     } else {
