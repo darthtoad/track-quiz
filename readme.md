@@ -20,7 +20,7 @@ Please alert me to any bugs you've found. Thank you!
 
 ## Contact Details:
 
-Sam: Darth.Toad@gmail.com  
+Sam: Samuel.Gespass@gmail.com  
 
 ### License
 
