@@ -1,6 +1,7 @@
 $(document).ready(function(){
   $("form#quiz").submit(function(event){
     event.preventDefault();
+    var name = $("input#name").val();
     var design = $("input:radio[name=1]:checked").val();
     var microsoft = $("input:radio[name=2]:checked").val();
     var java = $("input:radio[name=3]:checked").val();
@@ -12,18 +13,23 @@ $(document).ready(function(){
     $(".react").hide();
     $(".ruby").hide();
 
-    if (design === "yes") {
-      $(".design").show();
-    } else if (microsoft === "yes") {
-      $(".microsoft").show();
-    } else if (java === "yes") {
-      $(".java").show();
-    } else if (react === "yes") {
-      $(".react").show();
-    } else if (ruby === "yes") {
-      $(".ruby").show();
+    if (!name || !design || !microsoft || !java || !react || !ruby) {
+      alert("Please fill out all fields")
     } else {
-      alert('Did you say no or not respond to every question? Try saying "yes" to a question.');
+      $(".name").text(name);
+      if (design === "yes") {
+        $(".design").fadeIn();
+      } else if (microsoft === "yes") {
+        $(".microsoft").fadeIn();
+      } else if (java === "yes") {
+        $(".java").fadeIn();
+      } else if (react === "yes") {
+        $(".react").fadeIn();
+      } else if (ruby === "yes") {
+        $(".ruby").fadeIn();
+      } else {
+        alert('Did you say no or not respond to every question? Try saying "yes" to a question.');
+      };
     };
   });
 });
