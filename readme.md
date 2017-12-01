@@ -12,7 +12,9 @@ This application is a quiz to help people decide which track they want to choose
 
 html5  
 css  
-Bootstrap
+Bootstrap  
+Javascript  
+JQuery
 
 ## Known bugs:
 
