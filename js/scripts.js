@@ -13,6 +13,53 @@ $(document).ready(function(){
     $(".react").hide();
     $(".ruby").hide();
 
+    if (design === "maybe") {
+      var random = Math.random();
+      if (random >= 0.5) {
+        design = "yes";
+      } else {
+        design = "no";
+      }
+    };
+
+    if (microsoft === "maybe") {
+      var random = Math.random();
+      if (random >= 0.5) {
+        microsoft = "yes";
+      } else {
+        microsoft = "no";
+      }
+    };
+
+    if (java === "maybe") {
+      var random = Math.random();
+      if (random >= 0.5) {
+        java = "yes";
+      } else {
+        java = "no";
+      }
+    };
+
+    if (ruby === "maybe") {
+      var random = Math.random();
+      if (random >= 0.5) {
+        ruby = "yes";
+      } else {
+        ruby = "no";
+      }
+    };
+
+    if (react === "maybe") {
+      var random = Math.random();
+      if (random >= 0.5) {
+        react = "yes";
+      } else {
+        react = "no";
+      }
+    };
+
+    console.log(design);
+
     if (!name || !design || !microsoft || !java || !react || !ruby) {
       alert("Please fill out all fields")
     } else {
