@@ -18,11 +18,27 @@
   display: none;
 }
 
+body {
+  background: url(../img/bg.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  color: darkorange;
+  text-shadow: 2px 0 0 black, -2px 0 0 black, 0 2px 0 black, 0 -2px 0 black, 1px 1px black, -1px -1px 0 black, 1px -1px 0 black, -1px 1px 0 black;
+  font-weight: bold;
+  font-size: 14pt;
+}
+
+form {
+  margin-bottom: 30px;
+}
+
 img {
   width: 300px;
   margin: 10px;
 }
 
 p {
-  width: 600px;
+  width: 450px;
 }
