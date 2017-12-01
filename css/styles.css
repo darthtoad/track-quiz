@@ -60,3 +60,9 @@ input[type='radio']:checked:after {
     visibility: visible;
     border: 2px solid white;
 }
+
+@media screen and (max-width: 991px) {
+  .result {
+    float: none;
+  }
+}
