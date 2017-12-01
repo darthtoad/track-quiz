@@ -17,3 +17,8 @@
 .ruby {
   display: none;
 }
+
+img {
+  width: 300px;
+  margin: 10px;
+}
